@@ -1,0 +1,93 @@
+@import "../shared/theme.scss";
+
+header {
+    background-color: white;
+    padding: $common-container-padding;
+    display: flex;
+    background: /* gradient can be an image */ linear-gradient(
+            to right,
+            #FFFFFF 0%,
+            #1b4b76 100%
+        )
+        left bottom transparent no-repeat;
+    background-size: 100% 1px; /* if linear-gradient, we need to resize it */
+
+    > img {
+        padding: 8px 0;
+    }
+
+    nav {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+
+        .actions {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex: 1;
+            padding: 10px 0;
+
+            .search-btn {
+                border: 1px solid rgb(198, 57, 57);
+                background-color: rgb(198, 57, 57);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+
+                > img {
+                    max-width: unset;
+                }
+
+                &:hover {
+                    border: 1px solid rgb(181, 40, 40);
+                    background-color: rgb(181, 40, 40);
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            font-size: 18px;
+            margin-top: auto;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+
+                a {
+                    font-family: Arial, Helvetica, sans-serif !important;
+                    font-weight: 500;
+                    padding: 4px 19px;
+                }
+
+                .separator {
+                    width: 1px;
+                    height: 50%;
+                    background-color: rgb(225, 225, 225);
+                }
+
+                &:hover {
+                    color: #337ab7;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        nav > ul {
+            display: none !important;
+        }
+    }
+}
