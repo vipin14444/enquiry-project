@@ -1,0 +1,82 @@
+.landing-container {
+    height: 100vh;
+    background-image: url("../assets/images/Background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .cards-container {
+            margin: 2rem 0;
+            min-height: 200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            place-content: center;
+            gap: 3rem;
+
+            .card {
+                max-width: 300px;
+                padding: 10px;
+                background-color: rgba(255, 255, 255, 0.75);
+                color: #464242;
+
+                img {
+                    border-radius: 2px;
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    -ms-border-radius: 2px;
+                    -o-border-radius: 2px;
+                }
+
+                .title {
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: 8px;
+                }
+
+                .content {
+                    margin-top: 8px;
+                    text-align: justify;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .hero {
+            color: #464242;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                gap: 10px;
+                span {
+                    color: red;
+                    font-size: 3rem;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                font-weight: 400 !important;
+                padding: 0 20%;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                margin: 0.75rem 0;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

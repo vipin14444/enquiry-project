@@ -4,7 +4,7 @@ import './Header.scss'
 
 const Header = props => {
     return (
-        <header>
+        <header className='old'>
             <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" />
 
             <nav>

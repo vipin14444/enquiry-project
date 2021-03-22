@@ -1,0 +1,22 @@
+header.mainHeader {
+    display: flex;
+    margin: 0 5%;
+    padding: 2rem 0;
+
+    img {
+        height: auto;
+        width: 100px;
+    }
+
+    nav {
+        margin-left: auto;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 2rem;
+            color: red;
+            font-weight: bold;
+        }
+    }
+}

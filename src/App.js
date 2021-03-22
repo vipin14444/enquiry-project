@@ -1,14 +1,26 @@
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Landing from './screens/Landing';
 import './App.scss';
-import Content from './components/Content';
-import { Footer } from './components/Footer';
-import Header from './components/Header';
+import CreateEmployeeProfile from './screens/CreateEmployeeProfile';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+
+      <BrowserRouter>
+
+        <Switch>
+
+          <Route exact path={'/'} component={Landing} />
+          <Route exact path={'/employee-profile'} component={CreateEmployeeProfile} />
+
+        </Switch>
+
+      </BrowserRouter>
+
+      {/* <Header />
       <Content />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
